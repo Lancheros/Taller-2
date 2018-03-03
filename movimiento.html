@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Movimiento Cliente</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<h2 align="center">Movimientos Clientes</h2>
+
+<form>
+	<div class="container">
+		<div class="form-group">
+			<div class="alert alert-primary" role="alert">
+				<label for="nombre">Nombre Movimiento:</label>
+				<input type="text" class="form-control" name="name" placeholder="" maxlength="5" id="nombre">
+
+				<br>
+
+				<label for="tipo">Tipo Movimiento:</label>
+				<select class="form-control">
+					<option value="Colombia">DEBITO</option>
+					<option value="Mexico">CREDITO</option>
+				</select>
+
+				<br>
+				<label for="valor">Valor Movimiento:</label>
+				<input type="text" class="form-control" placeholder="$">
+				<br><br>
+
+
+				<div class="col-auto" align="right">
+      				<button type="submit" class="btn btn-primary mb-2">Crear Movimiento</button>
+    			</div>
+			</div>
+		</div>
+	</div>
+</form> 
+
+
+<div class="container">
+		<div class="alert alert-dark" role="alert">
+			<table align="center">
+				
+						<tr> <!-- Fila -->
+							<td>Nombre Movimiento</td> <!-- Columna -->
+							<td>Tipo Movimiento</td>
+							<td>Valor Movimiento</td>
+							<td>Fecha Registro</td>
+							<td>Accion</td>
+						</tr>
+						<tr>
+							<td><input type="text" name=""></td> <!-- Columna -->
+							<td><input type="text" name=""></td>
+							<td><input type="text" name=""></td>
+							<td><input type="text" name=""></td>
+							<td><input type="button" name="Eliminar" value="Eliminar"></td>
+						</tr>
+						<tr>
+							<td><input type="text" name=""></td> <!-- Columna -->
+							<td><input type="text" name=""></td>
+							<td><input type="text" name=""></td>
+							<td><input type="text" name=""></td>
+							<td><input type="button" name="Eliminar" value="Eliminar"></td>
+						</tr>
+
+			</table>
+		</div>
+	</div>
+
+</body>
+</html>
